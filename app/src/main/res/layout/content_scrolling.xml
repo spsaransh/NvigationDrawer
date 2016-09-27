@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sport.saransh.nvigationdrawer.AboutMe"
+    tools:showIn="@layout/activity_aboutme">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Hi I am Saransh Parashar .I did my Engineering from CMRIT in the field of Electronics Engineering and got 67.35% . "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:textColor="@color/colorAccent"
+            android:textSize="21sp"
+            android:text="Projects:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Currently I am working with Accenture .I was trained in ASP.Net .Later trained in Xamarin and Android .I have worked on two Projects.\n\n 1.The 1st Project was internal project and was related to Iot.My roles and Responsibilities included DEveloping the complete UI and interating it with the services.\n2. My second Project was Pearson .it was Xamarin IOS Project.The architecture used was MvvmCross.My Resonsibilities included bug fixing and improving the performance"/>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

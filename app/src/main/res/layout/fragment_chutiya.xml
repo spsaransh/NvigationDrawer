@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@+id/imgbeach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background ="@drawable/beaches"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/firstLayout"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:id="@+id/all_projects_layout">
+
+                    <ImageButton
+                        android:id="@+id/weather"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/weathericon"
+                        android:clickable="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weather"
+                        android:textSize="@dimen/subheading_main"
+                        android:textColor="@color/colorPrimary"
+                        android:typeface="normal"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_below="@+id/weather"
+
+                        android:layout_centerHorizontal="true" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.6sp"
+                    android:layout_height="match_parent"
+                    android:background="@color/material_grey_300"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:id="@+id/record_expense_layout">
+
+                    <ImageButton
+                        android:id="@+id/aboutme"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+
+                        android:background="@drawable/aboutme"
+                        android:clickable="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact ME"
+                        android:textSize="@dimen/subheading_main"
+                        android:textColor="@color/colorPrimary"
+                        android:typeface="normal"
+                        android:layout_marginTop="@dimen/small_margin"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/aboutme"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6sp"
+                android:id="@+id/line1"
+                android:layout_below="@id/firstLayout"
+                android:background="@color/material_grey_300"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:id="@+id/secondLayout"
+                android:layout_below="@+id/line1"
+                android:weightSum="2">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:id="@+id/log_time_layout">
+
+                    <ImageButton
+                        android:id="@+id/contact"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/propic"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MY PROFILE"
+                        android:textSize="@dimen/subheading_main"
+                        android:textColor="@color/colorPrimary"
+
+                        android:typeface="normal"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_below="@+id/contact"
+
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="0.6dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/material_grey_300"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:id="@+id/fifth_layout">
+
+                    <ImageButton
+                        android:id="@+id/feedback"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                       android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:background="#ffffff"
+                        android:src="@drawable/download"
+                        android:clickable="true"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FeedBack"
+                        android:textSize="@dimen/subheading_main"
+                        android:textColor="@color/colorPrimary"
+                        android:typeface="normal"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_below="@+id/feedback"
+
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

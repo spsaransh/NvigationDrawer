@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    tools:context="com.sport.saransh.nvigationdrawer.fragments.FeedbackForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/relfed">
+        <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/feedbackphoto"
+                android:layout_below="@+id/tool_bar" />
+        <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#aaaaaa"
+                   android:layout_below="@+id/img1"
+                    android:text="Feedback"
+                    android:layout_marginLeft="5dp" />
+        <android.support.v7.widget.RecyclerView
+                    android:id="@+id/feedback_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/tv1"
+
+                    android:layout_marginTop="15dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+       >
+
+        <TextView
+            android:id="@+id/imp_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textColor="#000000"
+            />
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_below="@+id/imp_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/rectangle"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/submit"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/colorcircle"
+            android:text="submit"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+          />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
